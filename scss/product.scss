@@ -1,0 +1,112 @@
+@import './mixin';
+@import './variable';
+
+body{
+    position: relative;
+}
+.product{
+    .tab-content{
+        .products{
+            padding: 10px;
+            border: 1px solid $c1-500;
+            margin: 10px 0;
+            text-align: center;
+            .product__img{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                cursor: pointer;
+                img{
+                    transition: all .5s;
+                    &:hover{
+                        transform: scale(1.3);
+                    }
+                }
+            }
+            h1{
+                cursor: pointer;
+                padding: 10px 0;
+                margin-bottom: 0;
+                transition: all .5s;
+                @include text(18px, 400, $c1-700,  #dc2d13);
+            }
+        }
+    }
+    
+    .product-category{
+        padding: 20px;
+        border: 1px solid $c1-100;
+        h4{
+            @include text(16px, 700, $c1-500);
+            border-bottom: 2px solid $c1-100;
+            padding-bottom: 10px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .product-item{
+            margin: 10px 0;
+            text-align: center;
+            .product-img{
+                width: 100%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    transition: all .5s;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.3);
+                    }
+                }
+            }
+            h1{
+                @include text(14px, 700, $c1-500);
+                margin-top: 5px;
+                cursor: pointer;
+                transition: all .5s;
+                &:hover{
+                    color: #dc2d13;
+                }
+                margin-bottom: 0;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
+    }
+}
+
+.product__show{
+    display: none;
+    padding: 40px 0;
+   .product__show__img{
+    display: grid;
+    gap: 10px;
+    .img-1{
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .img-3{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .img-4{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .img-5{
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+   }
+   h1{
+    @include text(24px, 400, $c1-500);
+    margin-top: 20px;
+   }
+}
+
+

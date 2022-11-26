@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PHUC THINH AUTO</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./img/LOGO.png">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-------- MAIN CSS -------->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/product.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="slogan-header">
+                    <p class="slogan"> “Chăm sóc xe toàn diện” cho quý khách hàng</p>
+                </div>
+
+                <p><a href="tel:0903 694 150"><i class="fa fa-phone"></i> 0903 694 150</a>
+                    <a href="mailto:phucthinhauto.service@gmail.com"><i class="fa fa-envelope"></i>
+                        phucthinhauto.service@gmail.com</a>
+                </p>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand me-5" href="#"><img src="./img/LOGO.png" alt="logo phúc thịnh"
+                        class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./news.html">Tin Tức</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Loại Xe
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="border-none">
+                                    <a class="dropdown-item" href="./portfolio.html">TẤT CẢ CÁC LOẠI XE</a>
+                                </li>
+                                <li>
+                                    <a 
+                                    onclick="renderType('MERCEDES-BENZ', 'mecrender')"
+                                    class="dropdown-item" href="#">MERCEDES-BENZ</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">BMW</a></li>
+                                <li><a class="dropdown-item" href="#">FORD</a></li>
+                                <li><a class="dropdown-item" href="#">MAZDA</a></li>
+                                <li><a class="dropdown-item" href="#">TOYOTA</a></li>
+                                <li><a class="dropdown-item" href="#">HUYNDAI</a></li>
+                                <li><a class="dropdown-item" href="#">KIA</a></li>
+                                <li><a class="dropdown-item" href="#">GENESIS</a></li>
+                                <li><a class="dropdown-item" href="#">ACURA</a></li>
+                                <li><a class="dropdown-item" href="#">CHEVROLET</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./machine.html" tabindex="-1" aria-disabled="true">Phụ Kiện Ô
+                                Tô</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" tabindex="-1" aria-disabled="true">Liên Hệ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input oninput="searchPhone()" id="inputSearch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="banner">
+    </section>
+
+    <section class="tab-bar">
+        <div class="container">
+            <a href="./index.html"><i class="fa fa-home"></i> Trang Chủ</a>
+            <b>/</b>
+            <span>Sản Phẩm</span>
+        </div>
+    </section>
+
+    <section class="product mt-5" id="arrProduct">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true">Tất Cả Sản Phẩm</button>
+                            <button onclick="renderType('MERCEDES-BENZ', 'mecrender')" class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#MERCEDES" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">MERCEDES-BENZ</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#BMW"
+                                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">BMW</button>
+                            <button 
+                            onclick="renderType('FORD', 'FORD')"
+                            class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#FORD"
+                                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">FORD</button>
+                            <button 
+                            onclick="renderType('MAZDA', 'MAZDA')"
+                            class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#MAZDA"
+                                type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">MAZDA</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#TOYOTA"
+                                type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">TOYOTA</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#HUYNHDAI" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">HUYNHDAI</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#KIA"
+                                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">KIA</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#CHEVROLET" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">CHEVROLET</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#ACURA"
+                                type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">ACURA</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#GENESIS"
+                                type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">GENESIS</button>
+
+
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div id="AllProduct" class="row py-5">
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="MERCEDES" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div id="mecrender" class="row py-5">
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="BMW" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            ...</div>
+                        <div class="tab-pane fade" id="FORD" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            ...</div>
+                        <div class="tab-pane fade" id="MAZDA" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            ...</div>
+                        <div class="tab-pane fade" id="TOYOTA" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            ...</div>
+                        <div class="tab-pane fade" id="HUYNHDAI" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            ...</div>
+                        <div class="tab-pane fade" id="KIA" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            ...</div>
+                        <div class="tab-pane fade" id="ACURA" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            ...</div>
+                        <Var>
+                            <div class="tab-pane fade" id="GENESIS" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                ...</div>
+                        </Var>
+                    </div>
+
+
+                </div>
+
+                <div class="col-3 p-4">
+
+                    <div class="product-category">
+                        <h4>SẢN PHẨM MỚI NHẤT</h4>
+                        <div id="newProduct">
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product__show" id="detailProduct">
+        
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="footer-about">
+                        <h1>Liên Hệ</h1>
+                        <p>Hãy liện hệ với chúng tôi bằng những cách dưới đây.</p>
+                        <ul>
+                            <li><i class="fa fa-phone"></i> <a href="tel: 0903 694 150 "> 0903 694 150 </a></li>
+                            <li><i class="fa fa-envelope"></i> <a
+                                    href="mailto:phucthinhauto.service@gmail.com">phucthinhauto.service@gmail.com</a>
+                            </li>
+                            <li><i class="fa fa-globe-asia"></i> <a
+                                    href="https://phucthinhauto.vn">www.phucthinhauto.vn</a></li>
+                            <li><i class="fa fa-map-marked-alt"></i>
+                                <span>C7/27 Phạm Hùng, Xã Bình Hưng, Huyện Bình Chánh, Thành phố Hồ Chí Minh</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-3 mt-lg-0">
+                    <div class="footer-catogery">
+                        <h1>Danh Mục Sản Phẩm</h1>
+                        <ul>
+                            <li>MERCEDES-BENZ</li>
+                            <li>BMW</li>
+                            <li>AUDI</li>
+                            <li>MAZDA</li>
+                            <li>TOYOTA</li>
+                            <li>FORD</li>
+                            <li>HUYNDAI</li>
+                            <li>KIA</li>
+                            <li>CHEVROLET</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 mt-3 mt-lg-0">
+                    <div class="footer-social">
+                        <a href="#"><img src="./img/LOGO.png" alt="Phuc thinh auto" class="img-fluid"></a>
+                        <div class="social">
+                            <a href="https://www.facebook.com/PhucThinhAuto.oto" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy-writing">
+        <div class="container">
+            © Copyright 2022 By ThanhTien.DEV - Phúc Thịnh Auto | Chuyên mua bán xe ôtô - Xe hơi & phụ kiện nhập khẩu
+        </div>
+    </div>
+
+    <div class="search" id="search">
+        <div class="search-bg">
+            <div class="container">
+                <div class="row" id="showProductSearch">
+                                       
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- isLoading -->
+    <div id="loading" class="loading">
+
+        <div>
+            <img src="./img/LOGO.png" alt="">
+        </div>
+        <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="BackToTop cd-top text-replace js-cd-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- PHONE -->
+    <a class="phoneTo" href="tel:0903 694 150 "><img src="./img/hl.png" alt="phone" class="img-fluid"></a>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JQUERY WAYPOINT CND -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0/axios.min.js"
+        integrity="sha512-26uCxGyoPL1nESYXHQ+KUmm3Maml7MEQNWU8hIt1hJaZa5KQAQ5ehBqK6eydcCOh6YAuZjV3augxu/5tY4fsgQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- BACK TO TOP -->
+    <script src="./js/vendor/mainbacktotop.js"></script>
+    <script src="./js/vendor/util.js"></script>
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/products.js"></script>
+
+</html>

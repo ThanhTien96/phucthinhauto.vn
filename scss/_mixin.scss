@@ -1,0 +1,36 @@
+
+
+@mixin text($fs, $fw,$color, $hc: $color) {
+    font-size: $fs;
+    font-weight: $fw; 
+    color: $color;
+    &:hover{
+        color: $hc;
+    }
+}
+
+@mixin btn($bg, $bd, $br, $pd, $height, $ts,$fs, $fw,$color, $hc: $color) {
+    background: $bg;
+    border: $bd;
+    border-radius: $br;
+    padding: $pd;
+    display: inline-block;
+    height: $height;
+    transition: $ts;
+    @include text($fs, $fw,$color, $hc: $color);
+}
+@mixin flex($flex, $justify, $center) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $center;
+}
+
+@mixin keyframes($runHeader){
+    @keyframes #{$runHeader}{
+       @content;
+    }
+}
+
+@mixin runIt($animation,$duration,$method,$times){
+    animation: $animation $duration $method $times;
+}

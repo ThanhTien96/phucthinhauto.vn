@@ -1,0 +1,70 @@
+@import './mixin';
+@import './variable';
+
+.news-detail{
+    .content-text{
+        h4{
+            a{
+                @include text(24px, 400, $c1-500);
+            cursor: pointer;
+            margin-bottom: 0;
+            text-decoration: none;
+            transition: all .5s;
+            &:hover{
+                color: #dc2d13;
+            }
+            @media screen and (max-width: 414px) {
+                text-align: center;
+            }
+            }
+        }
+        span{
+            @include text(14px, 700, rgb(99, 97, 97));
+        }
+    }
+}
+
+.product{
+    padding: 20px;
+    border: 1px solid $c1-100;
+    h4{
+        @include text(16px, 700, $c1-500);
+        border-bottom: 2px solid $c1-100;
+        padding-bottom: 10px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .product-item{
+        margin: 10px 0;
+        text-align: center;
+        .product-img{
+            width: 100%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                transition: all .5s;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+        h1{
+            @include text(16px, 700, $c1-500);
+            margin-top: 5px;
+            cursor: pointer;
+            transition: all .5s;
+            &:hover{
+                color: #dc2d13;
+            }
+            margin-bottom: 0;
+        }
+
+    }
+    
+    @media screen and (max-width: 414px) {
+        display: none;
+
+    }
+}
+

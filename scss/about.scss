@@ -1,0 +1,25 @@
+@import './mixin';
+@import './variable';
+
+.banner {
+    background: url(../img/bannerAbout.jpg);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content-about{
+    font-family: 'Lato', sans-serif;
+    h5{
+        line-height: 28px;
+        b{
+            color: $c1-700;
+        }
+        span{
+            color: $c1-500;
+        }
+    }
+
+}

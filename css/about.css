@@ -1,0 +1,21 @@
+.banner {
+  background: url(../img/bannerAbout.jpg);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.content-about {
+  font-family: "Lato", sans-serif;
+}
+.content-about h5 {
+  line-height: 28px;
+}
+.content-about h5 b {
+  color: #754100;
+}
+.content-about h5 span {
+  color: #a96c11;
+}
